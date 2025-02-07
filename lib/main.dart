@@ -1,9 +1,17 @@
 import 'package:dark_and_light_theme/pages/homepage.dart';
 import 'package:dark_and_light_theme/theme/theme.dart';
+import 'package:dark_and_light_theme/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+      ChangeNotifierProvider(
+          create: (context) => ThemeProvider(),
+          child: const MyApp(),
+      )
+  );
+
 }
 
 class MyApp extends StatelessWidget {
@@ -13,9 +21,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
-      theme: lightmode,
-      darkTheme: darkmode,
+      home: const HomePage(),
+      theme: Provider.of<ThemeProvider>(context).themeData
     );
   }
 }

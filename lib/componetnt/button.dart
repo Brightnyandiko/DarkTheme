@@ -12,7 +12,7 @@ class MyButton extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: color,
-          borderRadius: BorderRadius.circular(25)
+          borderRadius: BorderRadius.circular(8)
         ),
         padding: const EdgeInsets.all(25.0),
         child: const Center(child: Text("TAP"),),
