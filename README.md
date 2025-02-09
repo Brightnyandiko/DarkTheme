@@ -1,10 +1,16 @@
 # dark_and_light_theme
 
-A new Flutter project.
+A simple project implementing light and dark mode.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is an application to turn the theme of the app from light to dark mode.
+
+##Video Illustration
+
+
+https://github.com/user-attachments/assets/fcc7ca83-06cc-4b6b-ab6c-20919ffec83b.
+
 
 A few resources to get you started if this is your first Flutter project:
 
